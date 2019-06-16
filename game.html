@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Игра 2048</title>
+		<link rel="stylesheet" type="text/css" href="game.css"/>
+		<script src="game.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="lessons.css">
+	</head>
+
+	<body>
+		
+		<div id="mainDiv">
+			<table id="headerTable">
+				<tr>
+					<th>
+						<img src="..\img/java.png" height="146px"><h1>it's easy</h1>
+					</th>
+				</tr>
+			</table>
+			<nav id="navigation">
+				<ul>
+					<a href="..\index.html"><li>Главная страницы</li></a>
+					<a href="..\lessons.html"><li>Уроки</li></a>
+					<a href="..\shorthistory.html"><li>Краткая история Java</li></a>
+					<a href="..\facts.html"><li>Интересные факты о Java</li></a>
+					</ul>
+				</nav>
+			</div> <!--End headerTable-->	
+			<table id="contentTable">
+				<tr><td>
+					<div>
+						<center>
+							<input id="startGame" name="start" type="button" value="Начать игру" onClick="startGame()"></div><br>
+							<div id="divGame">
+								<table>
+									<center>
+									<tr>
+										<td id="GAMEFIELD" rowspan="2">
+											<center>								
+												<table>
+													<tr id="gamecell">
+														<td> <input type="button" name="1.1"></td>
+														<td> <input type="button"  name="1.2"></td>
+														<td> <input type="button"  name="1.3"></td>
+														<td> <input type="button"  name="1.4"></td>
+													</tr>
+													<tr id="gamecell">
+														<td> <input type="button"  name="2.1"></td>
+														<td> <input type="button"  name="2.2"></td>
+														<td> <input type="button"  name="2.3"></td>
+														<td> <input type="button"  name="2.4"></td>
+													</tr>
+													<tr id="gamecell">
+														<td> <input type="button"  name="3.1"></td>
+														<td> <input type="button"  name="3.2"></td>
+														<td> <input type="button"  name="3.3"></td>
+														<td> <input type="button"  name="3.4"></td>
+													</tr>
+													<tr id="gamecell">
+														<td> <input type="button"  name="4.1"></td>
+														<td> <input type="button"  name="4.2"></td>
+														<td> <input type="button"  name="4.3"></td>
+														<td> <input type="button"  name="4.4"></td>
+													</tr>
+												</table>
+											</center>
+										</td>
+										<td id="CONTROLARRAWS">
+											<table id="arrowsTable">
+												<tr>
+													<td colspan="3"><input type="button" id="result" name="showingSum"></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td><input type="button" value="^" onclick="push(1)"></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td id="arr"><div><input type="button" value="<" onclick="push(2)"></div></td>
+													<td></td>
+													<td id="arr"><input type="button" value=">" onclick="push(3)"></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td><input type="button" value="v" onclick="push(4)"></td>
+													<td></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									</center>
+								</table>
+							</div>
+							<input style="display:none" type="button" width="100px" height="100px" value="clear" onClick="clearCells()">
+						</center>
+					</div>
+				</td></tr>
+			</table>
+			<h3 align="right"> Автор: <a href="mailto: serge_nikiforov@bk.ru">SergeNikiforov</a> &copy; </h3>
+		</div> <!-- End mainDiv -->
+		
+	</body>
+</html>

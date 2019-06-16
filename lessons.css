@@ -1,0 +1,122 @@
+#navLessons{
+	float:left;
+	margin: 20px 10px 10px 0px;
+	width: 300px;
+	padding:0px;
+}
+
+#navLessons li{
+	border-left: 3px solid #99CD4E;
+	font-weight:bold;
+	list-style:none;
+	vertical-align:middle;
+	margin-top: 15px; 
+	padding: 10px 10px 10px 0px;
+}
+
+#navLessons li:hover{
+	padding:auto 20px;
+	
+	background-color:#99CD4E;
+	-webkit-border-radius: 5px;
+}
+#navLessons li:hover>ul>a{
+	color: white;
+	font-weight:bold;
+}
+
+
+/* создание выпадающего списка */
+
+#refsSub div{
+	margin:0px;
+	padding:0px;
+	display:none;
+}
+
+#refsSub:hover div{
+	display:block;
+}
+#refsSub li:hover{
+	font-weight: bold;
+	border-bottom: 4px solid white;
+}
+#refsSub li{
+	margin:10px 0px 0px 20px;
+	text-align:center;
+	line-height:1;
+	text-indent:0px;
+}
+/* выпадающий список создан  */
+
+details, summary{
+	display:block;
+}
+details,summary:hover{
+	cursor:pointer;
+}
+details{
+	background-color:#EBEBEB;
+	-webkit-border-radius: 10px;
+	margin: 0px 10px 40px;
+	padding: 0px 20px 10px;
+}
+
+summary{
+	text-align:center;
+	font-size:16pt;
+	color:#1B7856;
+	border-bottom:3px solid #1B7856;
+	padding:0px;
+}
+
+h3{
+	border-bottom: 2px solid black;
+	font-size: 18pt;
+	text-align:center;
+	margin-top:60px;
+}
+
+#variablesDefaulVulues {
+	border-collapse:collapse;
+}
+
+#variablesDefaulVulues td{
+	border: 1px solid #CCCCCC;
+	padding: 0px 10px;
+	margin:0px;
+	text-align:center;
+	width:10%;
+}
+
+#list{
+	list-style:none;
+}
+
+#comment{
+	color:green;
+}
+
+#outSiteLink{
+	color:blue;
+}
+
+#codeDiv{
+	text-align:left;
+	width:60%;
+	overflow:auto;
+	background-color:#CFCFCF;
+	margin:0px;
+	-webkit-border-radius:5px;
+}
+
+#codeDiv pre{
+	padding: 4%;
+	padding-top: 0%;
+	line-height:1,3;
+}
+
+
+#informText{
+	float:right;
+}
